@@ -22,7 +22,7 @@ def validate():
         return 'Failed validation. Make sure the validation tokens match.'
     
 
-@app.route('/demo', methods=['POST'])
+@app.route('/demo', methods=['POST'])#สำหรับรับ event
 def webhook():
     print(request.json)
 
